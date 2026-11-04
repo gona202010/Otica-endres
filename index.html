@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Óptica Endres | Visão Levada a Sério — Moinhos de Vento, Porto Alegre</title>
+  <meta name="description" content="Tradição desde 1955. Especialistas em lentes multifocais digitais Free Form, armações de grau e óculos de sol das melhores grifes mundiais no bairro Moinhos de Vento, Porto Alegre.">
+  <link rel="icon" type="image/png" href="imagens/selo_60anos.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit (100% Sans-Serif Modern) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ====================================================================
+       TOP PROMO BAR (CUPOM R$ 75 OFF - PROMOENDRES)
+       ==================================================================== -->
+  <div class="promo-topbar">
+    <div class="container promo-topbar__inner">
+      <div class="promo-topbar__left">
+        <span class="promo-topbar__dot"></span>
+        <span>Unidade Moinhos de Vento • Rua 24 de Outubro, 919 (Estacionamento Cortesia)</span>
+      </div>
+      <div class="promo-topbar__center">
+        <span>🎁 <strong>GANHE R$ 75 OFF</strong> na 1ª compra:</span>
+        <button type="button" class="promo-coupon-pill" onclick="copyPromoCoupon(this)" title="Clique para copiar o cupom">
+          <span>CUPOM: PROMOENDRES</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        </button>
+      </div>
+      <div class="promo-topbar__right">
+        <a href="tel:5132221342">📞 (51) 3222-1342</a>
+        <a href="https://api.whatsapp.com/send?phone=5551997389804&text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20" target="_blank" rel="noopener">💬 WhatsApp Moinhos</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       STICKY HEADER & NAVIGATION
+       ==================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand-logo-wrap" aria-label="Óptica Endres - Página Inicial">
+        <img src="imagens/logo_horizontal_trans.png" alt="Óptica Endres - Visão levada a sério" class="brand-logo">
+        <img src="imagens/selo_60anos.png" alt="Selo Tradição Óptica Endres desde 1955" class="brand-seal" title="Tradição Óptica desde 1955">
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Menu Principal">
+        <a href="#inicio" class="main-nav__link">Início</a>
+        <a href="#colecoes" class="main-nav__link">Armações</a>
+        <a href="#lentes" class="main-nav__link">Lentes</a>
+        <a href="#marcas" class="main-nav__link">Marcas</a>
+        <a href="#loja" class="main-nav__link">Contato</a>
+
+        <div class="nav-dropdown" id="navDropdown">
+          <button type="button" class="nav-dropdown__btn" id="navDropdownBtn" aria-expanded="false" aria-haspopup="true">
+            <span>Mais</span>
+            <svg class="nav-dropdown__chevron" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nav-dropdown__menu" id="navDropdownMenu">
+            <a href="#diferenciais" class="nav-dropdown__item">
+              <span class="nav-dropdown__item-title">Diferenciais</span>
+              <span class="nav-dropdown__item-desc">70 anos de tradição &amp; precisão</span>
+            </a>
+            <a href="#historia" class="nav-dropdown__item">
+              <span class="nav-dropdown__item-title">História</span>
+              <span class="nav-dropdown__item-desc">Nossa trajetória desde 1955</span>
+            </a>
+            <a href="#promocoes" class="nav-dropdown__item">
+              <span class="nav-dropdown__item-title">Promoções</span>
+              <span class="nav-dropdown__item-desc">Condições e facilidades exclusivas</span>
+            </a>
+            <a href="#cupom" class="nav-dropdown__item">
+              <span class="nav-dropdown__item-title">Cupom R$ 75 OFF</span>
+              <span class="nav-dropdown__item-desc">Bônus especial de 1ª compra</span>
+            </a>
+            <button type="button" class="nav-dropdown__item nav-dropdown__item--btn" id="navOpenPolicies">
+              <span class="nav-dropdown__item-title">Garantias &amp; Políticas</span>
+              <span class="nav-dropdown__item-desc">Adaptação estética &amp; dúvidas frequentes</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <a href="https://api.whatsapp.com/send?phone=5551997389804&text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20na%20%C3%93ptica%20Endres%20Moinhos." target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span>Orçamento WhatsApp</span>
+        </a>
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Abrir Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================================================================
+         HERO SECTION — EDITORIAL LUXURY & PRECISION OPTICS
+         ================================================================== -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero__eyebrow">
+            <span>Tradição Gaúcha Desde 1955</span>
+            <span>•</span>
+            <span class="accent">Moinhos de Vento, POA</span>
+          </div>
+
+          <h1 class="hero__title">
+            A sua visão <em>levada a sério</em> com precisão digital e estilo atemporal.
+          </h1>
+
+          <p class="hero__subtitle">
+            Há mais de sete décadas unindo laboratórios digitais de alta tecnologia em lentes multifocais à curadoria das grifes mais icônicas do mundo — Ray-Ban, Prada, Miu Miu, Dolce &amp; Gabbana, Tiffany &amp; Co., Versace e muito mais.
+          </p>
+
+          <div class="hero__cta-group">
+            <a href="#colecoes" class="btn btn--primary">
+              <span>Explorar Os Mais Vendidos</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5551997389804&text=Ol%C3%A1!%20Quero%20enviar%20minha%20receita%20para%20fazer%20um%20or%C3%A7amento%20na%20%C3%93ptica%20Endres." target="_blank" rel="noopener" class="btn btn--outline">
+              <span>Enviar Minha Receita</span>
+            </a>
+          </div>
+
+          <div class="hero__metrics">
+            <div class="metric-item">
+              <div class="metric-item__num">Desde 1955</div>
+              <div class="metric-item__label">História iniciada em Nova Prata e consagrada em Porto Alegre</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-item__num">Free Form</div>
+              <div class="metric-item__label">Especialistas em Lentes Multifocais Digitais ponto a ponto</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-item__num">+25 Grifes</div>
+              <div class="metric-item__label">Curadoria oficial de armações de grau e solares com garantia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__floating-card hero__floating-card--top">
+            <div class="floating-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="4"/><circle cx="18" cy="12" r="4"/><line x1="10" y1="12" x2="14" y2="12"/><path d="M2 12h0"/><path d="M22 12h0"/></svg>
+            </div>
+            <div>
+              <div class="floating-card__title">Especialistas em Multifocais</div>
+              <div class="floating-card__sub">Voltz Free Form, Varilux, Zeiss &amp; Rodenstock</div>
+            </div>
+          </div>
+
+          <div class="hero__image-frame">
+            <img src="imagens/hero_editorial.jpg" alt="Coleção de Óculos de Grau e Solares na Óptica Endres Moinhos de Vento">
+          </div>
+
+          <div class="hero__floating-card hero__floating-card--bottom">
+            <img src="imagens/estacionamento_cortesia.png" alt="Estacionamento Cortesia" style="width: 44px; height: 44px; object-fit: contain; flex-shrink: 0;">
+            <div>
+              <div class="floating-card__title">Estacionamento Cortesia</div>
+              <div class="floating-card__sub">Rua 24 de Outubro, 919 • Moinhos de Vento (exclusivo para clientes em compras)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         MARQUEE OF OFFICIAL EYEWEAR BRANDS
+         ================================================================== -->
+    <div class="brands-strip" aria-label="Marcas Trabalhadas">
+      <div class="container">
+        <div class="brands-strip__label">As Melhores Grifes Mundiais em Um Só Lugar</div>
+      </div>
+      <div class="marquee">
+        <div class="marquee__track">
+          <div class="marquee__item"><img src="imagens/brand_rayban.png" alt="Ray-Ban"></div>
+          <div class="marquee__item"><img src="imagens/brand_prada.png" alt="Prada"></div>
+          <div class="marquee__item"><img src="imagens/brand_miumiu.png" alt="Miu Miu"></div>
+          <div class="marquee__item"><img src="imagens/brand_dg.png" alt="Dolce & Gabbana"></div>
+          <div class="marquee__item"><img src="imagens/brand_tiffany.png" alt="Tiffany & Co."></div>
+          <div class="marquee__item"><img src="imagens/brand_dior.png" alt="Dior"></div>
+          <div class="marquee__item"><img src="imagens/brand_versace.png" alt="Versace"></div>
+          <div class="marquee__item"><img src="imagens/brand_burberry.png" alt="Burberry"></div>
+          <div class="marquee__item"><img src="imagens/brand_bvlgari.png" alt="Bvlgari"></div>
+          <div class="marquee__item"><img src="imagens/brand_vogue.png" alt="Vogue Eyewear"></div>
+          <div class="marquee__item"><img src="imagens/brand_oakley.png" alt="Oakley"></div>
+          <div class="marquee__item"><img src="imagens/brand_persol.png" alt="Persol"></div>
+          <div class="marquee__item"><img src="imagens/brand_giorgio_armani.png" alt="Giorgio Armani"></div>
+          <div class="marquee__item"><img src="imagens/brand_emporio_armani.png" alt="Emporio Armani"></div>
+          <div class="marquee__item"><img src="imagens/brand_silhouette.png" alt="Silhouette"></div>
+          <div class="marquee__item"><img src="imagens/brand_swarovski.png" alt="Swarovski"></div>
+          <!-- Duplicate for seamless infinite loop -->
+          <div class="marquee__item"><img src="imagens/brand_rayban.png" alt="Ray-Ban"></div>
+          <div class="marquee__item"><img src="imagens/brand_prada.png" alt="Prada"></div>
+          <div class="marquee__item"><img src="imagens/brand_miumiu.png" alt="Miu Miu"></div>
+          <div class="marquee__item"><img src="imagens/brand_dg.png" alt="Dolce & Gabbana"></div>
+          <div class="marquee__item"><img src="imagens/brand_tiffany.png" alt="Tiffany & Co."></div>
+          <div class="marquee__item"><img src="imagens/brand_dior.png" alt="Dior"></div>
+          <div class="marquee__item"><img src="imagens/brand_versace.png" alt="Versace"></div>
+          <div class="marquee__item"><img src="imagens/brand_burberry.png" alt="Burberry"></div>
+          <div class="marquee__item"><img src="imagens/brand_bvlgari.png" alt="Bvlgari"></div>
+          <div class="marquee__item"><img src="imagens/brand_vogue.png" alt="Vogue Eyewear"></div>
+          <div class="marquee__item"><img src="imagens/brand_oakley.png" alt="Oakley"></div>
+          <div class="marquee__item"><img src="imagens/brand_persol.png" alt="Persol"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================================================================
+         BENTO CATEGORIES SHOWCASE ("CONFIRA OS MODELOS QUE ARRASAM")
+         ================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Curadoria Óptica Endres</div>
+          <h2 class="section-title">Confira os Modelos que Arrasam</h2>
+          <p class="section-desc">
+            Nitidez absoluta para a sua rotina ou proteção solar com assinatura de alta moda. Escolha sua categoria ou transforme qualquer óculos de sol em óculos de grau.
+          </p>
+        </div>
+
+        <div class="bento-categories">
+          <!-- Armação de Grau -->
+          <div class="category-card">
+            <div class="category-card__media">
+              <img src="imagens/categoria_grau.png" alt="Armações de Grau - Nitidez e conforto">
+            </div>
+            <div class="category-card__overlay"></div>
+            <div class="category-card__content">
+              <span class="category-card__badge">Receituário &amp; Design</span>
+              <h3 class="category-card__title">Armação de Grau</h3>
+              <p class="category-card__sub">Nitidez e conforto com ajuste anatômico perfeito para lentes multifocais e visão simples.</p>
+              <button type="button" class="btn btn--emerald btn--sm" onclick="filterByCategory('grau')">
+                Ver Armações Mais Vendidas →
+              </button>
+            </div>
+          </div>
+
+          <!-- Óculos de Sol -->
+          <div class="category-card">
+            <div class="category-card__media">
+              <img src="imagens/categoria_solares.png" alt="Óculos de Sol - Proteção com estilo">
+            </div>
+            <div class="category-card__overlay"></div>
+            <div class="category-card__content">
+              <span class="category-card__badge">Solares &amp; Polarizados</span>
+              <h3 class="category-card__title">Óculos de Sol</h3>
+              <p class="category-card__sub">Proteção UV400 com estilo nas coleções mais desejadas da estação.</p>
+              <button type="button" class="btn btn--emerald btn--sm" onclick="filterByCategory('sol')">
+                Ver Solares Mais Vendidos →
+              </button>
+            </div>
+          </div>
+
+          <!-- Sol com Grau & Orçamento Rápido -->
+          <div class="category-card category-card--highlight">
+            <div>
+              <span class="category-card__badge" style="background: rgba(255,255,255,0.14);">Exclusividade Endres</span>
+              <h3 class="category-card__title" style="margin-top: 12px; font-size: 2.1rem;">Óculos de Sol com o Seu Grau</h3>
+              <p style="color: var(--text-on-dark-muted); font-size: 0.95rem; margin: 14px 0 24px; line-height: 1.65;">
+                Sabia que na <strong>Óptica Endres</strong> você pode transformar seus óculos solares favoritos em óculos de grau? Trabalhamos com lentes solares graduadas, polarizadas <strong>NuPolar</strong> e <strong>Transitions Drivewear</strong>.
+              </p>
+            </div>
+            <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); padding: 18px; border-radius: 16px; margin-bottom: 20px;">
+              <div style="font-size: 0.82rem; font-weight: 700; color: var(--endres-emerald-light); margin-bottom: 4px;">✓ Laboratório Digital de Precisão</div>
+              <div style="font-size: 0.82rem; color: var(--text-on-dark-muted);">Envie a foto da sua receita médica pelo WhatsApp e receba uma consultoria completa.</div>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=5551997389804&text=Ol%C3%A1!%20Quero%20fazer%20um%20or%C3%A7amento%20de%20%C3%B3culos%20de%20grau%20ou%20solar%20com%20grau%20na%20%C3%93ptica%20Endres." target="_blank" rel="noopener" class="btn btn--emerald" style="width: 100%;">
+              Quero Fazer um Orçamento
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         INTERACTIVE PRODUCT CATALOG ("OS MAIS VENDIDOS — GRAU & SOLARES")
+         ================================================================== -->
+    <section class="section section--alabaster" id="colecoes">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Vitrine Oficial • Passe o Mouse Para Ver 2 Ângulos</div>
+          <h2 class="section-title">Os Mais Vendidos: Grau &amp; Solares</h2>
+          <p class="section-desc">
+            Explore os modelos campeões de vendas da Óptica Endres Moinhos. Filtre por categoria ou marca, alterne os ângulos de visão e consulte disponibilidade imediata pelo WhatsApp.
+          </p>
+        </div>
+
+        <div class="catalog-controls">
+          <div class="catalog-controls__top">
+            <div class="category-tabs" role="tablist">
+              <button type="button" class="category-tab active" data-cat="all">Todos os Modelos (29)</button>
+              <button type="button" class="category-tab" data-cat="grau">Armações de Grau (16)</button>
+              <button type="button" class="category-tab" data-cat="sol">Óculos de Sol (13)</button>
+            </div>
+
+            <div class="catalog-search-wrap">
+              <svg class="catalog-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="search" id="catalogSearch" class="catalog-search-input" placeholder="Buscar marca, código (ex: RB3548, Prada)...">
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+            <div class="brand-pills" aria-label="Filtrar por marca">
+              <button type="button" class="brand-pill active" data-brand="all">Todas as Marcas</button>
+              <button type="button" class="brand-pill" data-brand="Ray-Ban">Ray-Ban</button>
+              <button type="button" class="brand-pill" data-brand="Prada">Prada</button>
+              <button type="button" class="brand-pill" data-brand="Miu Miu">Miu Miu</button>
+              <button type="button" class="brand-pill" data-brand="Dolce & Gabbana">Dolce &amp; Gabbana</button>
+              <button type="button" class="brand-pill" data-brand="Vogue">Vogue</button>
+              <button type="button" class="brand-pill" data-brand="Burberry">Burberry</button>
+              <button type="button" class="brand-pill" data-brand="Versace">Versace</button>
+              <button type="button" class="brand-pill" data-brand="Tory Burch">Tory Burch</button>
+              <button type="button" class="brand-pill" data-brand="Emporio Armani">Emporio Armani</button>
+              <button type="button" class="brand-pill" data-brand="Oakley">Oakley</button>
+            </div>
+            <div id="catalogCount" style="font-size: 0.84rem; color: var(--text-muted); font-weight: 600;"></div>
+          </div>
+        </div>
+
+        <!-- Product Cards Grid populated by js/main.js -->
+        <div class="products-grid" id="productsGrid"></div>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <p style="color: var(--text-secondary); margin-bottom: 16px; font-size: 0.96rem;">
+            Quer ver mais cores, tamanhos ou modelos exclusivos disponíveis em nossa loja física?
+          </p>
+          <a href="https://linktr.ee/endresoptica" target="_blank" rel="noopener" class="btn btn--primary">
+            <span>Falar com Consultor Óptico Agora</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         LENTES & TECNOLOGIA DIGITAL FREE FORM (/lentes)
+         ================================================================== -->
+    <section class="section section--dark" id="lentes">
+      <div class="container">
+        <div class="lenses-showcase">
+          <div>
+            <div class="section-tag">Alta Tecnologia Óptica • Laboratórios Digitais</div>
+            <h2 class="section-title" style="color: #ffffff;">Use Lentes VOLTZ: Tecnologia Digital Free Form</h2>
+            <p class="section-desc" style="margin-bottom: 20px;">
+              Com a inovadora tecnologia de personalização, as lentes <strong>Voltz Free Form</strong> se moldam às medidas e necessidades de cada usuário, proporcionando campos visuais mais amplos, nítidos e confortáveis.
+            </p>
+            <p class="section-desc">
+              Este resultado somente é possível por sua superfície ser <strong>calculada ponto a ponto</strong>, gerando uma lente digital única. As possibilidades são múltiplas — tanto para <strong>lentes multifocais</strong> quanto para <strong>lentes visão simples</strong>.
+            </p>
+
+            <div class="voltz-badge-card">
+              <img src="imagens/lentes_voltz.png" alt="Lentes Voltz Free Form">
+              <div>
+                <h3 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 4px;">Personalização Ponto a Ponto</h3>
+                <p style="font-size: 0.88rem; color: var(--text-on-dark-muted);">
+                  Opções em Multifocais <strong>Voltz Ultra, Voltz Z2, Voltz Amplitude e Voltz Premium</strong>, além de Monofocais com Antirreflexo <strong>Prolight</strong>.
+                </p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+              <a href="https://api.whatsapp.com/send?phone=5551997389804&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20Lentes%20Digitais%20Voltz%20Free%20Form%20na%20%C3%93ptica%20Endres." target="_blank" rel="noopener" class="btn btn--emerald">
+                Orçar Minhas Lentes pelo WhatsApp
+              </a>
+              <a href="https://www.lentesvoltz.com.br/lentes-voltz" target="_blank" rel="noopener" class="btn btn--outline-light">
+                Conhecer Tecnologia Voltz
+              </a>
+            </div>
+          </div>
+
+          <div class="lenses-showcase__media">
+            <img src="imagens/lentes_digital_freeform.jpg" alt="Lente Digital Free Form com Tratamento Antirreflexo na Óptica Endres">
+          </div>
+        </div>
+
+        <!-- All 7 Official Lens Partners from /lentes -->
+        <div style="margin-bottom: 24px;">
+          <h3 style="font-family: var(--font-display); font-size: 2rem; text-align: center; margin-bottom: 8px;">Marcas &amp; Soluções em Lentes Trabalhadas</h3>
+          <p style="text-align: center; color: var(--text-on-dark-muted); font-size: 0.95rem; margin-bottom: 32px;">
+            Lentes de Grau, Lentes Polarizadas, Lentes Fotossensíveis e Lentes Especiais para Dirigir:
+          </p>
+        </div>
+
+        <div class="lenses-partners-grid">
+          <div class="lens-partner-card">
+            <div class="lens-partner-card__img-wrap">
+              <img src="imagens/lentes_voltz.png" alt="Lentes Voltz">
+            </div>
+            <span class="lens-partner-card__category">Lentes de Grau</span>
+            <span class="lens-partner-card__name">Voltz Free Form</span>
+          </div>
+
+          <div class="lens-partner-card">
+            <div class="lens-partner-card__img-wrap">
+              <img src="imagens/lentes_varilux.png" alt="Lentes Varilux">
+            </div>
+            <span class="lens-partner-card__category">Lentes de Grau</span>
+            <span class="lens-partner-card__name">Varilux®</span>
+          </div>
+
+          <div class="lens-partner-card">
+            <div class="lens-partner-card__img-wrap">
+              <img src="imagens/lentes_zeiss.png" alt="Lentes Zeiss">
+            </div>
+            <span class="lens-partner-card__category">Lentes de Grau</span>
+            <span class="lens-partner-card__name">ZEISS</span>
+          </div>
+
+          <div class="lens-partner-card">
+            <div class="lens-partner-card__img-wrap">
+              <img src="imagens/lentes_rodenstock.png" alt="Lentes Rodenstock">
+            </div>
+            <span class="lens-partner-card__category">Lentes de Grau</span>
+            <span class="lens-partner-card__name">Rodenstock</span>
+          </div>
+
+          <div class="lens-partner-card">
+            <div class="lens-partner-card__img-wrap">
+              <img src="imagens/lentes_nupolar.png" alt="Lentes Polarizadas NuPolar">
+            </div>
+            <span class="lens-partner-card__category">Lentes Polarizadas</span>
+            <span class="lens-partner-card__name">NuPolar®</span>
+          </div>
+
+          <div class="lens-partner-card">
+            <div class="lens-partner-card__img-wrap">
+              <img src="imagens/lentes_transitions.png" alt="Lentes Fotossensíveis Transitions">
+            </div>
+            <span class="lens-partner-card__category">Fotossensíveis</span>
+            <span class="lens-partner-card__name">Transitions®</span>
+          </div>
+
+          <div class="lens-partner-card">
+            <div class="lens-partner-card__img-wrap">
+              <img src="imagens/lentes_drivewear.png" alt="Lentes para Dirigir Transitions Drivewear">
+            </div>
+            <span class="lens-partner-card__category">Lentes para Dirigir</span>
+            <span class="lens-partner-card__name">Drivewear®</span>
+          </div>
+        </div>
+
+        <!-- Interactive Lens Consultant Simulator -->
+        <div class="lens-wizard">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+            <div>
+              <span class="section-tag" style="margin-bottom: 4px;">Consultor Óptico Interativo</span>
+              <h3 style="font-family: var(--font-display); font-size: 1.9rem;">Qual é a necessidade principal da sua receita?</h3>
+            </div>
+            <span style="font-size: 0.84rem; color: var(--text-on-dark-muted);">Selecione abaixo para iniciar seu atendimento técnico:</span>
+          </div>
+
+          <div class="lens-wizard__options">
+            <button type="button" class="lens-option-btn selected" onclick="selectLensOption(this, 'Lentes Multifocais Digitais (Voltz Free Form / Varilux / Zeiss / Rodenstock)')">
+              <strong>👓 Lentes Multifocais</strong>
+              <span>Visão de perto, intermediária e longe com adaptação suave</span>
+            </button>
+            <button type="button" class="lens-option-btn" onclick="selectLensOption(this, 'Lentes Visão Simples com Antirreflexo / Filtro de Luz Azul')">
+              <strong>✨ Visão Simples + Antirreflexo</strong>
+              <span>Nitidez para miopia, hipermetropia ou astigmatismo</span>
+            </button>
+            <button type="button" class="lens-option-btn" onclick="selectLensOption(this, 'Lentes Fotossensíveis Transitions (Escurecem no Sol)')">
+              <strong>🌤️ Fotossensíveis Transitions®</strong>
+              <span>Lentes claras em ambientes internos que escurecem ao sol</span>
+            </button>
+            <button type="button" class="lens-option-btn" onclick="selectLensOption(this, 'Óculos de Sol com Grau / Polarizadas NuPolar ou Drivewear')">
+              <strong>🕶️ Solares com Grau / Dirigir</strong>
+              <span>NuPolar® polarizadas ou Transitions Drivewear® para direção</span>
+            </button>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+            <p style="font-size: 0.86rem; color: var(--text-on-dark-muted);">
+              ✓ Suas lentes serão fabricadas precisamente de acordo com sua receita médica com garantia total de adaptação.
+            </p>
+            <button type="button" class="btn btn--emerald" onclick="sendLensConsultation()">
+              Simular Orçamento com Especialista →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         DIFERENCIAIS DA ENDRES (/tecnologia & /politica-da-loja)
+         ================================================================== -->
+    <section class="section section--white" id="diferenciais">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Por Que Escolher a Endres</div>
+          <h2 class="section-title">Diferenciais da Óptica Endres</h2>
+          <p class="section-desc">
+            Nosso compromisso é satisfazer e superar as expectativas de nossos clientes quanto à adaptação, precisão técnica e conforto visual.
+          </p>
+        </div>
+
+        <div class="differentials-grid">
+          <div class="diff-card">
+            <div class="diff-card__icon">
+              <img src="imagens/icon_tecnologia.png" alt="Tecnologia">
+            </div>
+            <h3 class="diff-card__title">Tecnologia Digital</h3>
+            <p class="diff-card__text">
+              Lentes de grau com alta tecnologia. Trabalhamos com laboratórios digitais de fabricação que calculam sua lente ponto a ponto para máxima nitidez.
+            </p>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-card__icon">
+              <img src="imagens/icon_sol_grau.png" alt="Óculos de sol com grau">
+            </div>
+            <h3 class="diff-card__title">Óculos de Sol com Grau</h3>
+            <p class="diff-card__text">
+              Aqui você pode transformar seus óculos solares favoritos em óculos de grau mantendo a estética original, proteção UV e conforto visual.
+            </p>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-card__icon">
+              <img src="imagens/icon_ajustes.png" alt="Ajuste e limpe gratuitamente">
+            </div>
+            <h3 class="diff-card__title">Ajuste e Limpeza Cortesia</h3>
+            <p class="diff-card__text">
+              Na Óptica Endres você pode ajustar e higienizar seus óculos gratuitamente sempre que precisar, garantindo encaixe anatômico perfeito.
+            </p>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-card__icon">
+              <img src="imagens/icon_variedades.png" alt="Variedades de marcas">
+            </div>
+            <h3 class="diff-card__title">Ampla Variedade</h3>
+            <p class="diff-card__text">
+              Na Óptica Endres você encontra as melhores marcas internacionais e nacionais do mercado, sempre atualizadas com as últimas tendências.
+            </p>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-card__icon">
+              <img src="imagens/icon_multifocais.png" alt="Especialistas em Multifocais">
+            </div>
+            <h3 class="diff-card__title">Especialistas em Multifocais</h3>
+            <p class="diff-card__text">
+              Nossa óptica é referência em lentes multifocais em Porto Alegre, com tomada de medidas digitais precisas e consultores altamente treinados.
+            </p>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-card__icon">
+              <img src="imagens/icon_garantia.png" alt="Garantia e Precisão">
+            </div>
+            <h3 class="diff-card__title">Garantia &amp; Precisão</h3>
+            <p class="diff-card__text">
+              Suas lentes serão fabricadas precisamente de acordo com sua receita médica, com assistência completa, transparência e preços justos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         PRINCIPAIS MARCAS & DOSSIÊ DE GRIFES (/marcas)
+         ================================================================== -->
+    <section class="section section--alabaster" id="marcas">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Curadoria Internacional • Autenticidade Garantida</div>
+          <h2 class="section-title">Principais Marcas &amp; Sua História</h2>
+          <p class="section-desc">
+            Conheça os detalhes, país de origem e estilos icônicos das grandes maisons que compõem o acervo da Óptica Endres.
+          </p>
+        </div>
+
+        <div class="brands-dossier">
+          <div class="dossier-tabs" role="tablist">
+            <button type="button" class="dossier-tab active" data-brandkey="vogue">
+              <span>Vogue Eyewear</span>
+              <span class="dossier-tab__origin">Itália • 1973</span>
+            </button>
+            <button type="button" class="dossier-tab" data-brandkey="miumiu">
+              <span>Miu Miu</span>
+              <span class="dossier-tab__origin">Itália • 1993</span>
+            </button>
+            <button type="button" class="dossier-tab" data-brandkey="tiffany">
+              <span>Tiffany &amp; Co.</span>
+              <span class="dossier-tab__origin">EUA • 1837</span>
+            </button>
+            <button type="button" class="dossier-tab" data-brandkey="oakley">
+              <span>Oakley</span>
+              <span class="dossier-tab__origin">EUA • 1975</span>
+            </button>
+            <button type="button" class="dossier-tab" data-brandkey="prada">
+              <span>Prada Milano</span>
+              <span class="dossier-tab__origin">Itália • 1913</span>
+            </button>
+            <button type="button" class="dossier-tab" data-brandkey="rayban">
+              <span>Ray-Ban</span>
+              <span class="dossier-tab__origin">EUA / Itália • 1937</span>
+            </button>
+          </div>
+
+          <div class="dossier-panel" id="dossierPanel">
+            <!-- Populated by js/main.js -->
+          </div>
+        </div>
+
+        <!-- Complete Brand Logo Wall -->
+        <div class="all-brands-wall">
+          <div class="brand-wall-card" title="Ray-Ban"><img src="imagens/brand_rayban.png" alt="Ray-Ban"></div>
+          <div class="brand-wall-card" title="Prada"><img src="imagens/brand_prada.png" alt="Prada"></div>
+          <div class="brand-wall-card" title="Miu Miu"><img src="imagens/brand_miumiu.png" alt="Miu Miu"></div>
+          <div class="brand-wall-card" title="Dolce & Gabbana"><img src="imagens/brand_dg.png" alt="Dolce & Gabbana"></div>
+          <div class="brand-wall-card" title="Tiffany & Co."><img src="imagens/brand_tiffany.png" alt="Tiffany & Co."></div>
+          <div class="brand-wall-card" title="Dior"><img src="imagens/brand_dior.png" alt="Dior"></div>
+          <div class="brand-wall-card" title="Bvlgari"><img src="imagens/brand_bvlgari.png" alt="Bvlgari"></div>
+          <div class="brand-wall-card" title="Versace"><img src="imagens/brand_versace.png" alt="Versace"></div>
+          <div class="brand-wall-card" title="Burberry"><img src="imagens/brand_burberry.png" alt="Burberry"></div>
+          <div class="brand-wall-card" title="Vogue Eyewear"><img src="imagens/brand_vogue.png" alt="Vogue"></div>
+          <div class="brand-wall-card" title="Oakley"><img src="imagens/brand_oakley.png" alt="Oakley"></div>
+          <div class="brand-wall-card" title="Persol"><img src="imagens/brand_persol.png" alt="Persol"></div>
+          <div class="brand-wall-card" title="Giorgio Armani"><img src="imagens/brand_giorgio_armani.png" alt="Giorgio Armani"></div>
+          <div class="brand-wall-card" title="Emporio Armani"><img src="imagens/brand_emporio_armani.png" alt="Emporio Armani"></div>
+          <div class="brand-wall-card" title="Silhouette"><img src="imagens/brand_silhouette.png" alt="Silhouette"></div>
+          <div class="brand-wall-card" title="Swarovski"><img src="imagens/brand_swarovski.png" alt="Swarovski"></div>
+          <div class="brand-wall-card" title="Michael Kors"><img src="imagens/brand_michael_kors.png" alt="Michael Kors"></div>
+          <div class="brand-wall-card" title="Ralph Lauren"><img src="imagens/brand_ralph_lauren.png" alt="Ralph Lauren"></div>
+          <div class="brand-wall-card" title="Polo Ralph Lauren"><img src="imagens/brand_polo.png" alt="Polo"></div>
+          <div class="brand-wall-card" title="Stepper"><img src="imagens/brand_stepper.png" alt="Stepper"></div>
+          <div class="brand-wall-card" title="Ana Hickmann"><img src="imagens/brand_anahickmann.png" alt="Ana Hickmann"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         NOSSA HISTÓRIA — DESDE 1955 (/nossa-historia)
+         ================================================================== -->
+    <section class="section section--white" id="historia">
+      <div class="container">
+        <div class="history-grid">
+          <div class="history-media-stack">
+            <div class="history-main-photo">
+              <img src="imagens/historia_1955.png" alt="História da Óptica Endres iniciada em 1955 em Nova Prata - RS">
+            </div>
+            <div class="history-seal-badge">
+              <img src="imagens/selo_60anos.png" alt="Selo 60+ Anos Óptica Endres">
+              <div>
+                <div style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--endres-navy); line-height: 1.1;">Desde 1955</div>
+                <div style="font-size: 0.78rem; color: var(--text-secondary);">Mais de 70 anos cuidando da visão dos gaúchos</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-tag">Legado &amp; Tradição Óptica</div>
+            <h2 class="section-title">Nossa História: De Nova Prata a Porto Alegre</h2>
+            <p class="section-desc" style="margin-bottom: 18px;">
+              A história da <strong>Óptica Endres</strong> começou em <strong>1955</strong>, na cidade de <strong>Nova Prata</strong>, no interior do Rio Grande do Sul.
+            </p>
+            <p class="section-desc" style="margin-bottom: 18px;">
+              Sempre buscando excelência no atendimento aos seus clientes e trabalhando com as melhores marcas e modelos do mercado óptico, a Óptica Endres construiu uma trajetória sólida que a tornou sinônimo de <strong>visão levada a sério</strong>.
+            </p>
+            <p class="section-desc" style="margin-bottom: 28px;">
+              Hoje, concentramos nosso atendimento personalizado em nossa tradicional unidade no coração do bairro <strong>Moinhos de Vento</strong>, em Porto Alegre (Rua 24 de Outubro, 919), unindo o carinho do atendimento familiar à mais avançada tecnologia óptica mundial.
+            </p>
+            <a href="#loja" class="btn btn--primary">Conhecer Nossa Loja no Moinhos →</a>
+          </div>
+        </div>
+
+        <!-- Missão, Visão e Valores -->
+        <div class="mvv-grid">
+          <div class="mvv-card">
+            <h3>🎯 Nossa Missão</h3>
+            <p>
+              Oferecer produtos ópticos que satisfaçam as necessidades visuais de nossos clientes, com excelência no atendimento, assegurando satisfação, qualidade e preço justo.
+            </p>
+          </div>
+
+          <div class="mvv-card">
+            <h3>👁️ Nossa Visão</h3>
+            <p>
+              Ganhar reconhecimento contínuo no ramo óptico como uma das melhores ópticas do Rio Grande do Sul, possibilitando o acesso a produtos ópticos de altíssima qualidade e tecnologia.
+            </p>
+          </div>
+
+          <div class="mvv-card">
+            <h3>💎 Nossos Valores</h3>
+            <ul>
+              <li>Foco total no cliente e no seu conforto visual.</li>
+              <li>Comprometimento com a transparência.</li>
+              <li>Excelência no serviço e simplicidade na atuação.</li>
+              <li>Superar as expectativas com atendimento de alto nível.</li>
+              <li>Investimento em alta tecnologia com resultados sustentáveis.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         PROMOÇÕES & CAMPANHAS EXCLUSIVAS (/promoçoes)
+         ================================================================== -->
+    <section class="section section--alabaster" id="promocoes">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Condições Especiais • Óptica Endres Moinhos</div>
+          <h2 class="section-title">Promoções &amp; Campanhas Exclusivas</h2>
+          <p class="section-desc">
+            Confira nossas campanhas especiais para renovar seus óculos de grau, fazer seu primeiro multifocal ou sair de óculos de sol novo. Consulte as condições vigentes com nossos consultores!
+          </p>
+        </div>
+
+        <div class="promos-grid">
+          <!-- Promo 1: Voltz em Dobro -->
+          <article class="promo-card">
+            <div class="promo-card__media">
+              <img src="imagens/promo_voltz_dobro.png" alt="Promoção Voltz em Dobro na Óptica Endres">
+            </div>
+            <div class="promo-card__body">
+              <span class="promo-card__tag">Campanha Destaque</span>
+              <h3 class="promo-card__title">Promoção Voltz em Dobro</h3>
+              <p class="promo-card__desc">
+                Na compra de um par de lentes multifocal <strong>Voltz com antirreflexo Prolight</strong>, ganhe outro par de lentes Voltz de igual ou menor valor. Válido para todos os campos de visão de Multifocais Voltz na loja Moinhos.
+              </p>
+              <a href="https://api.whatsapp.com/send?phone=5551997389804&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Promo%C3%A7%C3%A3o%20Voltz%20em%20Dobro%20na%20%C3%93ptica%20Endres." target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+                Saiba Mais no WhatsApp →
+              </a>
+            </div>
+          </article>
+
+          <!-- Promo 2: Meu 1º Multifocal -->
+          <article class="promo-card">
+            <div class="promo-card__media">
+              <img src="imagens/promo_primeiro_multifocal.png" alt="Promoção Meu 1º Multifocal Óptica Endres">
+            </div>
+            <div class="promo-card__body">
+              <span class="promo-card__tag">Adaptação Garantida</span>
+              <h3 class="promo-card__title">Promoção Meu 1º Multifocal</h3>
+              <p class="promo-card__desc">
+                A transição para lentes multifocais marca um novo momento na sua produtividade e bem-estar. Condição especial válida para os multifocais <strong>Voltz</strong> com adição máxima de até +1,75 em ambas as lentes.
+              </p>
+              <a href="https://api.whatsapp.com/send?phone=5551997389804&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Promo%C3%A7%C3%A3o%20Meu%201%C2%BA%20Multifocal." target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+                Saiba Mais no WhatsApp →
+              </a>
+            </div>
+          </article>
+
+          <!-- Promo 3: Upgrade Solar -->
+          <article class="promo-card">
+            <div class="promo-card__media">
+              <img src="imagens/promo_upgrade_solar.png" alt="Promoção Upgrade Solar Ray-Ban, Vogue ou Prada">
+            </div>
+            <div class="promo-card__body">
+              <span class="promo-card__tag">Combo Grau + Solar</span>
+              <h3 class="promo-card__title">Upgrade Óculos Completo + Solar</h3>
+              <p class="promo-card__desc">
+                Que tal renovar o seu óculos de grau e ainda sair de óculos de sol novo? Na compra de um óculos completo (Armação + Lentes), faça um upgrade especial para levar um <strong>Solar Vogue, Ray-Ban ou Prada</strong>!
+              </p>
+              <a href="https://api.whatsapp.com/send?phone=5551997389804&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20promo%C3%A7%C3%A3o%20de%20Upgrade%20para%20levar%20um%20%C3%93culos%20Solar." target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+                Saiba Mais no WhatsApp →
+              </a>
+            </div>
+          </article>
+
+          <!-- Promo 4: Campanhas Sazonais Gaúchas -->
+          <article class="promo-card">
+            <div class="promo-card__media">
+              <img src="imagens/promo_farroupilha.jpeg" alt="Promoções Especiais e Presentes Exclusivos Óptica Endres">
+            </div>
+            <div class="promo-card__body">
+              <span class="promo-card__tag">Tradição &amp; Presentes</span>
+              <h3 class="promo-card__title">Campanhas Especiais &amp; Brindes</h3>
+              <p class="promo-card__desc">
+                Ao longo do ano — Mês das Mães, Mês dos Pais, Setembro Farroupilha e Natal em Dobro — preparamos mimos exclusivos (como kits Tramontina, O Boticário e solares em dobro) na compra de lentes Voltz Ultra, Z2, Amplitude e Premium.
+              </p>
+              <a href="https://api.whatsapp.com/send?phone=5551997389804&text=Ol%C3%A1!%20Quais%20s%C3%A3o%20as%20promo%C3%A7%C3%B5es%20ativas%20deste%20m%C3%AAs%20na%20%C3%93ptica%20Endres%20Moinhos%3F" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+                Consultar Promoção do Mês →
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- CADASTRE-SE E GANHE R$ 75 OFF (PROMOENDRES) -->
+        <div class="coupon-banner" id="cupom">
+          <div>
+            <span class="section-tag" style="color: var(--endres-emerald-light);">Benefício Exclusivo Primeira Compra</span>
+            <h3 class="coupon-banner__title">
+              Cadastre-se e <span>Ganhe R$ 75 OFF*</span> na Primeira Compra
+            </h3>
+            <p style="color: var(--text-on-dark-muted); font-size: 1rem; margin-bottom: 20px; line-height: 1.65;">
+              Garanta seu cupom <strong>PROMOENDRES</strong> agora mesmo! O seu cupom vale por <strong>30 dias</strong> para compras presenciais em nossa loja da <strong>Óptica Endres Moinhos</strong> (Rua 24 de Outubro, 919).
+            </p>
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+              <button type="button" class="btn btn--emerald btn--sm" onclick="copyPromoCoupon(this)">
+                Copiar Código: PROMOENDRES
+              </button>
+              <span style="font-size: 0.8rem; color: var(--text-on-dark-muted);">*Válido na loja Óptica Endres Moinhos.</span>
+            </div>
+          </div>
+
+          <form class="coupon-form" onsubmit="handleCouponSubmit(event)">
+            <div style="font-weight: 700; font-size: 1.05rem; margin-bottom: 4px;">Receba seu Cupom de R$ 75 OFF</div>
+            <input type="text" id="couponName" placeholder="Seu nome completo" required>
+            <input type="email" id="couponEmail" placeholder="Seu melhor e-mail" required>
+            <input type="tel" id="couponPhone" placeholder="Seu WhatsApp (opcional)">
+            <button type="submit" class="btn btn--emerald" style="width: 100%;">
+              Cadastrar Agora e Ativar R$ 75 OFF
+            </button>
+            <div id="couponFeedback" style="display: none; margin-top: 10px; padding: 14px; border-radius: 10px; background: rgba(56,178,136,0.2); border: 1px solid var(--endres-emerald-light); font-size: 0.85rem; line-height: 1.5;"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         LOJA MOINHOS DE VENTO & CONTATO (/lojas & /contato)
+         ================================================================== -->
+    <section class="section section--white" id="loja">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Visite Nossa Loja Física em Porto Alegre</div>
+          <h2 class="section-title">Óptica Endres — Unidade Moinhos de Vento</h2>
+          <p class="section-desc">
+            Atendimento técnico personalizado, laboratório digital e estacionamento cortesia no coração da Rua 24 de Outubro.
+          </p>
+        </div>
+
+        <div class="store-grid">
+          <!-- Store Details Card -->
+          <div class="store-info-card">
+            <div>
+              <div class="store-photo-header">
+                <img src="imagens/loja_moinhos.jpg" alt="Fachada e Interior da Óptica Endres Moinhos de Vento">
+                <div>
+                  <span class="section-tag" style="margin-bottom: 4px;">Porto Alegre • RS</span>
+                  <h3 style="font-family: var(--font-display); font-size: 2rem; color: var(--endres-navy); line-height: 1.1;">Óptica Endres Moinhos</h3>
+                  <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">Rua 24 de Outubro, 919 — Moinhos de Vento</p>
+                </div>
+              </div>
+
+              <div class="store-details-list">
+                <div class="store-detail-item">
+                  <div class="store-detail-icon">📍</div>
+                  <div>
+                    <strong>Endereço Completo</strong>
+                    <p style="font-size: 0.92rem; color: var(--text-secondary);">Rua 24 de Outubro, 919 — Bairro Moinhos de Vento, Porto Alegre - RS, CEP 90510-002</p>
+                  </div>
+                </div>
+
+                <div class="store-detail-item">
+                  <div class="store-detail-icon">🕒</div>
+                  <div>
+                    <strong>Horário de Atendimento</strong>
+                    <p style="font-size: 0.92rem; color: var(--text-secondary);">
+                      Segunda a Sexta: <strong>9:00 às 18:45</strong><br>
+                      Sábado: <strong>9:00 às 17:00</strong> • Domingo: Fechado
+                    </p>
+                  </div>
+                </div>
+
+                <div class="store-detail-item">
+                  <div class="store-detail-icon">📞</div>
+                  <div>
+                    <strong>Telefone Fixo, WhatsApp &amp; E-mail</strong>
+                    <p style="font-size: 0.92rem; color: var(--text-secondary);">
+                      Telefone: <a href="tel:5132221342" style="color: var(--endres-navy); font-weight: 700;">(51) 3222-1342</a> •
+                      WhatsApp: <a href="https://api.whatsapp.com/send?phone=5551997389804" target="_blank" rel="noopener" style="color: var(--endres-emerald-dark); font-weight: 700;">(51) 99738-9804</a><br>
+                      E-mail: <a href="mailto:moinhos@opticaendres.com.br" style="text-decoration: underline;">moinhos@opticaendres.com.br</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Courtesy Parking Highlight -->
+              <div class="parking-highlight">
+                <img src="imagens/estacionamento_cortesia.png" alt="Estacionamento Cortesia">
+                <div>
+                  <strong style="color: var(--endres-navy); display: block; font-size: 0.95rem;">Estacionamento Cortesia para Clientes em Compras</strong>
+                  <span style="font-size: 0.84rem; color: var(--text-secondary);">No próprio local: Rua 24 de Outubro, 919 — comodidade e segurança para sua visita.</span>
+                </div>
+              </div>
+
+              <!-- Official Notice from /lojas -->
+              <div style="background: var(--bg-ivory); border-left: 3px solid var(--endres-navy); padding: 12px 16px; border-radius: 8px; font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 24px;">
+                <strong>Comunicado Oficial:</strong> Prezado cliente, nosso atendimento concentra-se exclusivamente na <strong>Óptica Endres Moinhos</strong> (as operações da antiga unidade Andradas foram encerradas). Qualquer dúvida, contate-nos pelo WhatsApp!
+              </div>
+            </div>
+
+            <div>
+              <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 10px;">
+                Dirigir até a loja com:
+              </div>
+              <div class="route-buttons">
+                <a href="https://ul.waze.com/ul?place=ChIJ_ZL4y8l5GZUR54rIkblVEuQ&ll=-30.02383130%2C-51.19939070&navigate=yes" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+                  🚗 Abrir no Waze
+                </a>
+                <a href="https://www.google.com.br/maps/dir//%C3%93ptica+Endres+Moinhos+-+Rua+24+de+Outubro+-+Moinhos+de+Vento,+Porto+Alegre+-+RS/@-30.0238313,-51.1993907,17z" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+                  🗺️ Abrir no Google Maps
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5551997389804&text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20%C3%93ptica%20Endres%20Moinhos." target="_blank" rel="noopener" class="btn btn--emerald btn--sm">
+                  💬 Chamar no WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map + Contact Form Column -->
+          <div class="map-contact-column">
+            <div class="map-frame">
+              <iframe
+                title="Mapa Óptica Endres Moinhos - Rua 24 de Outubro, 919"
+                src="https://www.google.com/maps?q=Rua+24+de+Outubro,+919,+Moinhos+de+Vento,+Porto+Alegre+-+RS&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <div class="contact-card" id="contato">
+              <h3 style="font-family: var(--font-display); font-size: 1.65rem; color: var(--endres-navy); margin-bottom: 6px;">
+                Entre em Contato Conosco
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 18px;">
+                Envie sua dúvida ou solicitação de orçamento — respondemos rapidamente pelo WhatsApp ou e-mail.
+              </p>
+
+              <form class="contact-form-grid" onsubmit="handleContactSubmit(event)">
+                <div>
+                  <input type="text" id="contactName" class="form-input" placeholder="Seu nome" required>
+                </div>
+                <div>
+                  <input type="tel" id="contactPhone" class="form-input" placeholder="Seu telefone / WhatsApp" required>
+                </div>
+                <div class="full">
+                  <select id="contactSubject" class="form-input">
+                    <option value="Orçamento de Lentes / Receita Médica">Orçamento de Lentes / Receita Médica</option>
+                    <option value="Consulta de Armação de Grau">Consulta de Armação de Grau</option>
+                    <option value="Consulta de Óculos de Sol">Consulta de Óculos de Sol</option>
+                    <option value="Promoções Vigentes (Voltz / Upgrade Solar)">Promoções Vigentes (Voltz / Upgrade Solar)</option>
+                    <option value="Ajuste / Assistência Técnica">Ajuste / Assistência Técnica</option>
+                  </select>
+                </div>
+                <div class="full">
+                  <textarea id="contactMessage" rows="3" class="form-input" placeholder="Como podemos ajudar você hoje?" required></textarea>
+                </div>
+                <div class="full">
+                  <button type="submit" class="btn btn--primary" style="width: 100%;">
+                    Enviar Mensagem para a Equipe Endres →
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       SITE FOOTER
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <img src="imagens/logo_horizontal_white.png" alt="Óptica Endres - Visão levada a sério" class="footer__logo">
+          <p style="font-size: 0.9rem; color: var(--text-on-dark-muted); margin-bottom: 18px; line-height: 1.65;">
+            Tradição óptica desde 1955. Especialistas em lentes multifocais digitais Free Form, armações receituárias e óculos solares das melhores marcas mundiais em Porto Alegre.
+          </p>
+          <div style="display: flex; gap: 12px;">
+            <a href="https://www.instagram.com/opticaendres/" target="_blank" rel="noopener" class="btn btn--outline-light btn--sm">Instagram</a>
+            <a href="https://www.facebook.com/opticaendres" target="_blank" rel="noopener" class="btn btn--outline-light btn--sm">Facebook</a>
+            <a href="https://br.pinterest.com/opticaendres" target="_blank" rel="noopener" class="btn btn--outline-light btn--sm">Pinterest</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__heading">Navegação</div>
+          <ul class="footer__links">
+            <li><a href="#inicio">Página Inicial</a></li>
+            <li><a href="#colecoes">Os Mais Vendidos (Grau &amp; Sol)</a></li>
+            <li><a href="#lentes">Lentes &amp; Tecnologia Voltz</a></li>
+            <li><a href="#diferenciais">Diferenciais da Endres</a></li>
+            <li><a href="#marcas">Principais Marcas</a></li>
+            <li><a href="#historia">Nossa História (1955)</a></li>
+            <li><a href="#promocoes">Promoções &amp; Cupom R$ 75 OFF</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__heading">Informações &amp; Políticas</div>
+          <ul class="footer__links">
+            <li><button type="button" onclick="document.getElementById('policyModal').classList.add('open')">Política da Loja &amp; Qualidade</button></li>
+            <li><button type="button" onclick="document.getElementById('policyModal').classList.add('open')">Trocas, Garantias &amp; Adaptação</button></li>
+            <li><button type="button" onclick="document.getElementById('policyModal').classList.add('open')">Perguntas Frequentes (FAQ)</button></li>
+            <li><a href="#cupom">Cupom PROMOENDRES (R$ 75 OFF)</a></li>
+            <li><a href="https://linktr.ee/endresoptica" target="_blank" rel="noopener">Central de Atendimento Linktree</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__heading">Métodos de Pagamento</div>
+          <p style="font-size: 0.88rem; color: var(--text-on-dark-muted); line-height: 1.6;">
+            • Dinheiro &amp; PIX<br>
+            • Cartão de Débito<br>
+            • Cartões de Crédito em até <strong>6x sem juros</strong>
+          </p>
+          <div class="payment-cards-img">
+            <img src="imagens/bandeiras_cartoes.png" alt="Bandeiras de Cartões Aceitas na Óptica Endres">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div>
+          © 1955–2026 <strong>Óptica Endres</strong> — Todos os direitos reservados. Rua 24 de Outubro, 919 — Moinhos de Vento, Porto Alegre - RS.
+        </div>
+        <div>
+          Produtos sujeitos à disponibilidade de estoque. Visão levada a sério.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       PRODUCT QUICK-VIEW MODAL
+       ==================================================================== -->
+  <div class="modal-backdrop" id="quickViewModal" role="dialog" aria-modal="true" aria-label="Detalhes do Produto">
+    <div class="modal-box">
+      <button type="button" class="modal-close" onclick="closeModal('quickViewModal')" aria-label="Fechar">✕</button>
+      <div id="quickViewContent"></div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       POLICIES & FAQ MODAL (/politica-da-loja & /faq)
+       ==================================================================== -->
+  <div class="modal-backdrop" id="policyModal" role="dialog" aria-modal="true" aria-label="Políticas da Loja e FAQ">
+    <div class="modal-box">
+      <button type="button" class="modal-close" onclick="closeModal('policyModal')" aria-label="Fechar">✕</button>
+      <span class="section-tag">Transparência &amp; Compromisso</span>
+      <h3 style="font-family: var(--font-display); font-size: 2.1rem; color: var(--endres-navy); margin-bottom: 16px;">Política da Loja, Pagamentos &amp; Dúvidas Frequentes</h3>
+
+      <div style="display: grid; gap: 18px; color: var(--text-secondary); font-size: 0.94rem;">
+        <div style="background: var(--bg-ivory); padding: 20px; border-radius: 14px; border: 1px solid var(--border-subtle);">
+          <h4 style="color: var(--endres-navy); margin-bottom: 8px;">1. Política de Qualidade da Empresa</h4>
+          <p>• Satisfazer e superar as expectativas de nossos clientes quanto à adaptação e conforto visual.<br>
+             • Capacitar nossos colaboradores com treinamentos frequentes buscando excelência no atendimento.<br>
+             • Estarmos sempre atualizados com as tendências do mercado para oferecer as melhores opções em produtos.<br>
+             • Proporcionar diversas opções de escolha aos nossos clientes disponibilizando ampla variedade.<br>
+             • Garantir a qualidade e assistência permanente dos produtos vendidos.<br>
+             • Praticar preços justos e competitivos com o mercado.</p>
+        </div>
+
+        <div style="background: var(--bg-ivory); padding: 20px; border-radius: 14px; border: 1px solid var(--border-subtle);">
+          <h4 style="color: var(--endres-navy); margin-bottom: 8px;">2. Métodos de Pagamento</h4>
+          <p>Aceitamos pagamentos em Dinheiro, PIX, Cartão de Débito e Cartões de Crédito parcelados em <strong>até 6x</strong>.</p>
+        </div>
+
+        <div style="background: var(--bg-ivory); padding: 20px; border-radius: 14px; border: 1px solid var(--border-subtle);">
+          <h4 style="color: var(--endres-navy); margin-bottom: 8px;">3. Ajustes, Limpeza e Assistência</h4>
+          <p>Oferecemos ajuste anatômico e limpeza ultrassônica gratuita para seus óculos em nossa loja física na Rua 24 de Outubro, 919 (Moinhos de Vento), além de estacionamento cortesia para clientes em compras.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       FLOATING WHATSAPP CTA
+       ==================================================================== -->
+  <a href="https://api.whatsapp.com/send?phone=5551997389804&text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20da%20%C3%93ptica%20Endres%20Moinhos." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Atendimento via WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    <span>Atendimento Moinhos</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
